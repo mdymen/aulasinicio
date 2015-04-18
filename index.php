@@ -20,7 +20,9 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/beyond.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link id="beyond-link" href="css/beyond.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -60,11 +62,105 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Bobby Aulas</h1>
+        <div class="text-vertical-center" style="vertical-align:top !important; padding-top: 60px;">
+            
+            
+            <div class="row">
+                        <div class="col-xs-12 col-md-7" style="padding-top:100px;">
+                                  <h1>Bobby Aulas</h1>
             <h3>é hora de aprender...</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>      
+
+                        </div>
+                
+                <div class="col-xs-12 col-md-3">
+                                            <div class="widget flat radius-bordered">
+                                                <div class="">
+                                                    <span class=""><h2>Cadástro</h2></span>
+                                                </div>
+                                                <div class="">
+                                                    <div id="registration-form">
+                                                        <form role="form" action="../aulas/public/auth/login" method="post">
+                                                            <div class="form-title">
+                                                                É grátis...
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <span class="input-icon icon-right">
+                                                                    <input type="text" class="form-control" id="ST_USUARIO_USU" name="ST_USUARIO_USU" placeholder="Usuario">
+                                                                    <i class="glyphicon glyphicon-user circular"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <span class="input-icon icon-right">
+                                                                    <input type="text" class="form-control" id="ST_EMAIL_USU" name="ST_EMAIL_USU" placeholder="E-mail">
+                                                                    <i class="fa fa-envelope-o circular"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <span class="input-icon icon-right">
+                                                                    <input type="text" class="form-control" id="ST_SENHA_USU" name="ST_SENHA_USU" placeholder="Senha">
+                                                                    <i class="fa fa-lock circular"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <span class="input-icon icon-right">
+                                                                    <input type="text" class="form-control" id="confirmPasswordInput" placeholder="Confirmacao">
+                                                                    <i class="fa fa-lock circular"></i>
+                                                                </span>
+                                                            </div>
+                                                            
+                                                            <hr class="wide">
+                                                   
+                                                            <a href="../aulas/public" class="btn btn-success">Logar</a>       
+                                                            <button type="submit" class="btn btn-blue">Register</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                
+                
+                
+                
+                
+                
+                
+<!--                        <div class="col-xs-12 col-md-4">
+                             <div class="registerbox">
+                <form method="post" action="/aulas/public/auth/signup">
+                    <h2> Cadastro </h2>
+                    <h3> É gratis </h3>
+                <div class="registerbox-textbox">
+                    <input type="text" class="form-control" name="ST_USUARIO_USU" placeholder="Usuario" style="width:220px">
+                </div>
+                <div class="registerbox-textbox" style="padding-top:15px;">
+                    <input type="password" class="form-control" name="ST_SENHA_USU" placeholder="Senha" style="width:100px; float:left">
+                </div>
+                <div class="registerbox-textbox" style="margin-left :120px;">
+                    <input type="password" class="form-control" name="Confirmacao" placeholder="Confirmar" style="width:100px;">
+                </div>
+
+                <div class="registerbox-textbox" style="padding-top:15px">
+                    <input type="text" class="form-control" name="ST_EMAIL_USU" placeholder="E-mail" style="width:220px">
+                </div>
+
+
+
+                <div class="registerbox-submit"><a href="javascript:void(0)" id="lnkLogin">Login</a>
+                    <input type="submit" class="btn btn-primary pull-right" value="SUBMIT">
+                </div>
+                    </form>
+            </div>
+                        </div>-->
+                    </div>
+            
+            
+           
+            
+            
+
         </div>
     </header>
 
@@ -222,7 +318,8 @@
 
     <!-- Map -->
     <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235231.64761594174!2d-47.03026080000002!3d-22.895124900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8f6a2552649%3A0x7475001c58043536!2sCampinas%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1429380577204" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+        <!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>-->
         <br />
         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
