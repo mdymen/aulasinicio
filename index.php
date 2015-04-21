@@ -81,7 +81,7 @@
                                                 </div>
                                                 <div class="">
                                                     <div id="registration-form">
-                                                        <form role="form" action="../aulas/public/auth/login" method="post">
+                                                        <form role="form" action="../aulas/public/auth/signup" method="post">
                                                             <div class="form-title">
                                                                 É grátis...
                                                             </div>
@@ -99,13 +99,13 @@
                                                             </div>
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
-                                                                    <input type="text" class="form-control" id="ST_SENHA_USU" name="ST_SENHA_USU" placeholder="Senha">
+                                                                    <input type="password" class="form-control" id="ST_SENHA_USU" name="ST_SENHA_USU" placeholder="Senha">
                                                                     <i class="fa fa-lock circular"></i>
                                                                 </span>
                                                             </div>
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
-                                                                    <input type="text" class="form-control" id="confirmPasswordInput" placeholder="Confirmacao">
+                                                                    <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirmacao">
                                                                     <i class="fa fa-lock circular"></i>
                                                                 </span>
                                                             </div>
@@ -113,7 +113,7 @@
                                                             <hr class="wide">
                                                    
                                                             <a href="../aulas/public" class="btn btn-success">Logar</a>       
-                                                            <button type="submit" class="btn btn-blue">Register</button>
+                                                            <button type="submit" class="btn btn-blue">Cadastra-se</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -332,28 +332,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Bobby Aulas</strong>
                     </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <p>Campinas, Sao Paulo, Brasil.</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        <li><i class="fa fa-phone fa-fw"></i></li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:info@bobbyaulas.com">info@bobbyaulas.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/bobbyaulas" TARGET="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
-                        <li>
+<!--                        <li>
                             <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
+                        </li>-->
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="text-muted">Copyright &copy; Your Website 2015</p>
                 </div>
             </div>
         </div>
