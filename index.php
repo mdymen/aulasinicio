@@ -35,7 +35,7 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<!--    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -58,7 +58,7 @@
                 <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
         </ul>
-    </nav>
+    </nav>-->
 
     <!-- Header -->
     <header id="top" class="header">
@@ -70,50 +70,50 @@
                                   <h1>Bobby Aulas</h1>
             <h3>é hora de aprender...</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>      
+<!--            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>      -->
 
                         </div>
                 
-                <div class="col-xs-12 col-md-3">
+                 <div class="col-xs-12 col-md-3">
                                             <div class="widget flat radius-bordered">
                                                 <div class="">
-                                                    <span class=""><h2>Cadástro</h2></span>
+                                                    <span class=""><h2>Cadástre-se</h2></span>
                                                 </div>
                                                 <div class="">
                                                     <div id="registration-form">
                                                         <form role="form" action="../aulas/public/auth/signup" method="post">
                                                             <div class="form-title">
-                                                                É grátis...
+                                                                o conhecimento não ocupa lugar
                                                             </div>
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
-                                                                    <input type="text" class="form-control" id="ST_USUARIO_USU" name="ST_USUARIO_USU" placeholder="Usuario">
+                                                                    <input type="text" class="form-control" id="ST_USUARIO_USU" name="ST_USUARIO_USU" placeholder="Usuario" style="height:40px">
                                                                     <i class="glyphicon glyphicon-user circular"></i>
                                                                 </span>
                                                             </div>
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
-                                                                    <input type="text" class="form-control" id="ST_EMAIL_USU" name="ST_EMAIL_USU" placeholder="E-mail">
+                                                                    <input type="text" class="form-control" id="ST_EMAIL_USU" name="ST_EMAIL_USU" placeholder="E-mail" style="height:40px">
                                                                     <i class="fa fa-envelope-o circular"></i>
                                                                 </span>
                                                             </div>
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
-                                                                    <input type="password" class="form-control" id="ST_SENHA_USU" name="ST_SENHA_USU" placeholder="Senha">
+                                                                    <input type="password" class="form-control" id="ST_SENHA_USU" name="ST_SENHA_USU" placeholder="Senha" style="height:40px">
                                                                     <i class="fa fa-lock circular"></i>
                                                                 </span>
                                                             </div>
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
-                                                                    <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirmacao">
+                                                                    <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirmacao" style="height:40px">
                                                                     <i class="fa fa-lock circular"></i>
                                                                 </span>
                                                             </div>
                                                             
                                                             <hr class="wide">
-                                                   
-                                                            <a href="../aulas/public" class="btn btn-success">Logar</a>       
-                                                            <button type="submit" class="btn btn-blue">Cadastra-se</button>
+                                                   <button type="submit" class="btn btn-blue">Cadastre-se</button>
+                                                            <a href="../aulas/public" class="">Logar-se</a>       
+                                                            
                                                         </form>
                                                     </div>
                                                 </div>
@@ -169,8 +169,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h2>O conhecimento abre portas,</h2>
+                    <p class="lead">oferece mais oportunidades e enriquece as comunidades...</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -184,7 +184,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2>Nossos serviços</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -194,10 +194,10 @@
                                 <i class="fa fa-cloud fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Cursos</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Cursos com o mais atualizado conteúdo.</p>
+<!--                                <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -207,10 +207,10 @@
                                 <i class="fa fa-compass fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Professores</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Você não está sozinho. Tire suas dúvidas quando quiser.</p>
+<!--                                <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -220,10 +220,10 @@
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Assinaturas</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Receba conhecimento e faça cursos com assinatura.</p>
+<!--                                <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -233,10 +233,10 @@
                                 <i class="fa fa-shield fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Compartilhe conhecimento</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Faça seu próprio curso.</p>
+<!--                                <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+            <h1>Estude com a gente...</h1>
         </div>
     </aside>
 
@@ -261,7 +261,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
+                    <h2>Alguns cursos!!</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
