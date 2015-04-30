@@ -23,6 +23,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/beyond.min.css" media="screen" rel="stylesheet" type="text/css">
     <link id="beyond-link" href="css/beyond.min.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
