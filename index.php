@@ -114,7 +114,7 @@
                                                             
                                                             <hr class="wide">
                                                    <button type="submit" class="btn btn-blue">Cadastre-se</button>
-                                                            <a href="../aulas/public" class="">Logar-se</a>       
+                                                            <a class="btn btn-success" href="../aulas/public" class="">Logar-se</a>       
                                                             
                                                         </form>
                                                     </div>
