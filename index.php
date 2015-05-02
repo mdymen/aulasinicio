@@ -123,8 +123,8 @@
                                                             </div>
                                                             
                                                             <hr class="wide">
-                                                            <button id="btnCadastro" type="submit" class="btn btn-blue">Cadastre-se</button>
-                                                            <a class="btn btn-success" href="../aulas/public" class="">Logar-se</a>       
+                                                            <button id="btnCadastro" type="submit" class="btn btn-blue">Cadástre-se</button>
+                                                            <a class="btn btn-success" href="../aulas/public" class="">ENTRAR</a>       
                                                             
                                                         </form>
                                                     </div>
