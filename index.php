@@ -415,10 +415,10 @@
 
 <script type="text/javascript"> 
 
-    function usuario() {
+    function usuario(exists) {
          $('#ST_USUARIO_USU_icone').css('display','none');
             var usuario = $('#ST_USUARIO_USU').val();
-            if(usuario === "") {
+            if(exists || usuario === "") {
                $('#ST_USUARIO_USU').css('border-color','red');
                $('#ST_USUARIO_USU_times').css('display','inline');
                $('#ST_USUARIO_USU_check').css('display','none');
@@ -448,12 +448,12 @@
            }
     };
     
-    function email() {
+    function email(exists) {
         var email = $('#ST_EMAIL_USU').val();
            var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
            var res = pattern.test(email);
            $('#ST_EMAIL_USU_icone').css('display','none');
-           if (res) {
+           if ((!exists) && (res)) {
                 $('#ST_EMAIL_USU').css('border-color','green');
                 $('#ST_EMAIL_USU_check').css('display','inline'); 
                 $('#ST_EMAIL_USU_times').css('display','none'); 
@@ -483,7 +483,35 @@
            }
     };
     
+    function checkusuario() {
+        var exists;
+        $.ajax({
+          type: 'POST',
+          url: "../aulas/public/auth/checkusuario",
+          data: {usuario : $('#ST_USUARIO_USU').val()},
+          success: function(result) {
+            exists = result;
+          },
+          dataType: 'json',
+          async:false
+        });     
+        return exists;
+    }
     
+    function checkemail() {
+        var exists;
+        $.ajax({
+          type: 'POST',
+          url: "../aulas/public/auth/checkemail",
+          data: {email : $('#ST_EMAIL_USU').val()},
+          success: function(result) {
+            exists = result;
+          },
+          dataType: 'json',
+          async:false
+        });        
+        return exists;
+    }
 
     $(function() {
         
@@ -492,8 +520,10 @@
             var e = email();
             var p = senha();
             var c = conf();
+            var cu = checkusuario();
+            var ce = checkemail();
             
-            if (!u || !e || !p || !c) {
+            if (!u || !e || !p || !c || cu || ce) {
                 event.preventDefault(); 
                 event.stopPropagation();
             }
@@ -501,12 +531,13 @@
         });
 
         $('#ST_USUARIO_USU').focusout(function() {
-            usuario();
+            var exists = checkusuario();
+            usuario(exists);
         });
         
-        $('#ST_EMAIL_USU').focusout(function() {
-           email();
-           
+        $('#ST_EMAIL_USU').focusout(function() {  
+           var exists = checkemail();  
+           email(exists);
         });
         
         $('#ST_SENHA_USU').focusout(function() {
