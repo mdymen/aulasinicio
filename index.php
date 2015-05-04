@@ -31,10 +31,56 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
+   
 </head>
 
 <body>
+    <style>
+        
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 240px;
+	height: 200px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+    </style>
 
     <!-- Navigation -->
 <!--    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -184,6 +230,56 @@
                     <h2>O conhecimento abre portas,</h2>
                     <p class="lead">oferece mais oportunidades e enriquece as comunidades...</p>
                 </div>
+            </div>     
+           <div class="row">     
+                <div class="col-lg-3 text-center">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                                <div class="front" style="background:#f8f8f8;">
+                                    <img data-src="holder.js/240x200" alt="100%x200" src="/aulas/public/../application/uploads/descarga.jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                                </div>
+                                <div class="back" style="background:#000000;">
+                                        <!-- back content -->
+                                </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-lg-3 text-center">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                                <div class="front" style="background:#f8f8f8;">
+                                    <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images.jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                                </div>
+                                <div class="back" style="background:#000000;">
+                                        <!-- back content -->
+                                </div>
+                        </div>
+                    </div>                    
+                </div>
+               <div class="col-lg-3 text-center">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                                <div class="front" style="background:#f8f8f8;">
+                                    <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images (1).jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                                </div>
+                                <div class="back" style="background:#000000;">
+                                        <!-- back content -->
+                                </div>
+                        </div>
+                    </div>                    
+                </div>
+               <div class="col-lg-3 text-center">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                                <div class="front" style="background:#f8f8f8;">
+                                    <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images (2).jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                                </div>
+                                <div class="back" style="background:#000000;">
+                                        <!-- back content -->
+                                </div>
+                        </div>
+                    </div>                    
+                </div>               
             </div>
             <!-- /.row -->
         </div>
