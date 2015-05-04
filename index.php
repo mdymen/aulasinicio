@@ -85,7 +85,7 @@
                                                     <div id="registration-form">
                                                         <form role="form" action="../aulas/public/auth/signup" method="post">
                                                             <div class="form-title">
-                                                                o conhecimento não ocupa lugar
+                                                                e confira nossos cursos...
                                                             </div>
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
