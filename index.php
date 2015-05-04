@@ -234,50 +234,75 @@
            <div class="row">     
                 <div class="col-lg-3 text-center">
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                                <div class="front" style="background:#f8f8f8;">
-                                    <img data-src="holder.js/240x200" alt="100%x200" src="/aulas/public/../application/uploads/descarga.jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
-                                </div>
-                                <div class="back" style="background:#000000;">
-                                        <!-- back content -->
-                                </div>
-                        </div>
+                        <a href="#">
+                            <div class="flipper">
+                                    <div class="front" style="background:#f8f8f8;">
+                                        <img data-src="holder.js/240x200" alt="100%x200" src="/aulas/public/../application/uploads/descarga.jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                                    </div>
+                                    <div class="back" style="background:#FFFFE0;">
+                                            <!-- back content -->
+                                    </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                <div class="col-lg-3 text-center">
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                                <div class="front" style="background:#f8f8f8;">
-                                    <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images.jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
-                                </div>
-                                <div class="back" style="background:#000000;">
-                                        <!-- back content -->
-                                </div>
-                        </div>
+                        <a href="#">
+                            <div class="flipper">
+                                    <div class="front" style="background:#f8f8f8;">
+                                        <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images.jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                                    </div>
+                                    <div class="back" style="background:#FFFFE0;">
+                                           <div class="">
+                                               <br><br><br><br>
+                                               <h4><b>Pronomes em inglés</b></h4>                         
+                                           </div>
+                                    </div>
+                            </div>
+                        </a>
                     </div>                    
                 </div>
                <div class="col-lg-3 text-center">
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
-                                <div class="front" style="background:#f8f8f8;">
-                                    <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images (1).jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                        <a href="#">
+                                <div class="flipper">
+                                        <div class="front" style="background:#f8f8f8;">
+                                            <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images (1).jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
+                                        </div>
+                                        <div class="back" style="background:#FFFFE0;">
+                                            <br><br><br><br>
+                                            <div>
+
+                                                <h4><b>Curso:</b> Verb To Be</h4><br>                                  
+                                            </div>
+                                        </div>
                                 </div>
-                                <div class="back" style="background:#000000;">
-                                        <!-- back content -->
-                                </div>
-                        </div>
+                         </a>
                     </div>                    
                 </div>
                <div class="col-lg-3 text-center">
                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <a href="#">
                         <div class="flipper">
                                 <div class="front" style="background:#f8f8f8;">
                                     <img data-src="holder.js/100%x200" alt="100%x200" src="/aulas/public/../application/uploads/images (2).jpg" data-holder-rendered="true" style="height: 200px; width: 240px; display: block;">
                                 </div>
-                                <div class="back" style="background:#000000;">
-                                        <!-- back content -->
+                                <div class="back" style="background:#FFFFE0;">
+                                    <div>
+                                        <h4><b>Curso:</b> Wh-Questions</h4>
+                                        1 - <b>Who</b> [quem]<br>
+                                        2 - <b>Where</b> [onde]<br>
+                                        3 - <b>Why</b> [por quê]<br>
+                                        4 - <b>What</b> [o quê, qual]<br>
+                                        5 - <b>Which</b> [[o quê, qual]<br>
+                                        6 - <b>When</b>[quando]<br> 
+                                        7 - <b>How</b> [como]<br>
+                                        8 - <b> Exercicios </b>
+                                    </div>
                                 </div>
                         </div>
+                            </a>
                     </div>                    
                 </div>               
             </div>
