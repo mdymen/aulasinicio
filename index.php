@@ -1,3 +1,7 @@
+<?php
+   // include_once 'aulas/public/index.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +40,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    
     <style>
         
 /* entire container, keeps perspective */
@@ -123,7 +129,7 @@
                         </div>
                 
                  <div class="col-xs-12 col-md-3">
-                                            <div class="widget flat radius-bordered">
+                                            <div class="widget flat radius-bordered" id="divCadastro" >
                                                 <div class="">
                                                     <span class=""><h2>Cadastre-se</h2></span>
                                                 </div>
@@ -170,12 +176,36 @@
                                                             
                                                             <hr class="wide">
                                                             <button id="btnCadastro" type="submit" class="btn btn-blue">Enviar</button>
-                                                            <a class="btn btn-success" style="margin-left: 15px" href="../aulas/public" class="">Já sou usuário...</a>       
+                                                            <a class="btn btn-success" style="margin-left: 15px" href="../aulas/public" class="">Já sou usuário...</a> <br><br>
+                                                            <div id="btnLogFacebook" onlogin="testAPI();" class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
                                                             
                                                         </form>
                                                     </div>
                                                 </div>
                                             </div>
+                                <div id="divWelcome" style="display:none;">
+                                  <div class="lock-container animated fadeInDown" style="padding-top:50px;">
+                                  <a href="../aulas/public"><div class="lock-box text-align-center">
+                                    <div class="lock-username"><span id="logedUser">Logged</span></div>
+                                    <img src="img/perfil.jpg" alt="divyia avatar">
+                                    <div class="lock-password">
+                                    <form role="form" class="form-inline" action="index.html">
+                                    <div class="form-group">
+                                       <span class="input-icon icon-right">
+                                       </span>
+                                    </div>
+                                    </form>
+                                  </div>
+
+                                  </div>
+                                </a>
+                                <div class="signinbox">
+                                <a href="javascript:void(0)" id="lnkSair">Sair</a>
+                                </div>
+                                  </div>
+                                
+                                </div>
+                                </div></div>
                                         </div>
                 
                 
@@ -528,6 +558,34 @@
             }
         });
     });
+    
+    $(function() {
+        $('#lnkAlreadyLogged').bind('click', function() {
+           alert('entrar'); 
+        });
+        
+        $('#lnkSair').bind('click', function(){
+           FB.logout();             
+           $.post('aulas/public/auth/logout',function(){
+               window.location.reload();
+           }); 
+        });
+        
+        $.post('aulas/public/auth/islogged', function(response) {
+            if (response) {
+                $('#divCadastro').hide();
+                $('#divWelcome').show();
+                $('#logedUser').html('<b>Bem vindo: </b>' + response.ST_USUARIO_USU);    
+                console.log(response);
+            } else {
+//                $('#divCadastro').attr('style',"display:block;");
+//                $('#divCadastro').attr('style',"display:inline;");
+//                $('#divCadastro').show();
+                console.log('ACA');
+            }
+        });
+    });
+    
     </script>
 
 </body>
@@ -683,3 +741,114 @@
   ga('send', 'pageview');
 
 </script>
+
+
+<script>
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      //testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1004500626241844',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+
+    $(function() {
+       $('#btnLogFacebook').bind('click', function() {
+           alert('clic');
+          testAPI(); 
+       });
+    });
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+        $('#divCadastro').hide();
+        $('#divWelcome').show();
+        $('#logedUser').html(response.name);
+        console.log(response);
+        $.post('aulas/public/auth/loginfacebook', {id: response.id, name: response.name, email: response.email},function(data) {
+            console.log(data);
+        });
+//        
+//        FB.logout(function(response) {
+//            console.log(response);        // Person is now logged out
+//        });
+
+    });
+  }
+</script>
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+
+<!--<fb:login-button scope="public_profile,email" onlogin="testAPI();">
+</fb:login-button>-->
+
+<div id="status">
+</div>
