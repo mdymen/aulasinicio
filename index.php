@@ -166,7 +166,7 @@
                                                             <div class="form-group">
                                                                 
                                                                 <span class="input-icon icon-right">
-                                                                    <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirmacao" style="height:40px;">
+                                                                    <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirmação" style="height:40px;">
                                                                     <i id="confirmPasswordInput_icone" class="fa fa-lock circular" ></i>
                                                                     <i id="confirmPasswordInput_times" class="fa fa-times danger circular"  style="display:none;"></i>
                                                                     <i id="confirmPasswordInput_check" class="fa fa-check-circle success circular"  style="display:none;"></i>
@@ -398,7 +398,7 @@
                                 <h4>
                                     <strong>Compartilhe conhecimento</strong>
                                 </h4>
-                                <p>Faça seu próprio curso.</p>
+                                <p>Publique seu curso e ganhe dinheiro.</p>
 <!--                                <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
@@ -419,7 +419,7 @@
         </div>
     </aside>
 
-    <!-- Portfolio -->
+<!--     Portfolio 
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
@@ -456,17 +456,17 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
+                     /.row (nested) 
                     <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
-                <!-- /.col-lg-10 -->
+                 /.col-lg-10 
             </div>
-            <!-- /.row -->
+             /.row 
         </div>
-        <!-- /.container -->
+         /.container 
     </section>
 
-    <!-- Call to Action -->
+     Call to Action 
     <aside class="call-to-action bg-primary">
         <div class="container">
             <div class="row">
@@ -477,7 +477,7 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside>-->
 
     <!-- Map -->
     <section id="contact" class="map">
