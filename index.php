@@ -354,7 +354,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                <i class="fa fa-book fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Cursos</strong>
@@ -367,7 +367,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <i class="fa fa-pencil fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Professores</strong>
@@ -380,7 +380,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Assinaturas</strong>
@@ -393,7 +393,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <i class="fa fa-usd fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Compartilhe conhecimento</strong>
