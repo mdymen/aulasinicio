@@ -829,9 +829,25 @@
         $('#divWelcome').show();
         $('#logedUser').html(response.name);
         console.log(response);
-        $.post('aulas/public/auth/loginfacebook', {id: response.id, name: response.name, email: response.email},function(data) {
-            console.log(data);
-        });
+        if (!response.email) {
+            $.post('aulas/public/auth/checkidfacebook', {id: response.id, name: response.name}, function(res) {
+               if (res === 0) {
+                   window.location = '/aulas/public/?ex=no&faceid='+response.id;
+               } else if (res === 1){
+                   window.location = '/aulas/public/?ex=yes&faceid='+response.id;
+               } else {
+ 
+                   $.post('aulas/public/auth/loginfacebyid', {id: response.id}, function(rep) {
+
+                   });
+               }
+            });            
+        } else {
+            
+            $.post('aulas/public/auth/loginfacebook', {id: response.id, name: response.name, email: response.email},function(data) {
+                console.log(data);
+            });
+        }
 //        
 //        FB.logout(function(response) {
 //            console.log(response);        // Person is now logged out
