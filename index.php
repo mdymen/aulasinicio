@@ -122,7 +122,10 @@
             <div class="row">
                         <div class="col-xs-12 col-md-7" style="padding-top:100px;">
                                   <h1>Bobby Aulas</h1>
-            <h3>é hora de aprender...</h3>
+                                  <center>
+            <h3 style="width:80%; ">Com Bobby Aulas você tem oportunidade de obter lucros com seu conhecimento, você mesmo pode publicar seu próprio curso.
+Também poderá aprender com o conhecimento de outras pessoas.
+Venha para Bobby Aulas e conheça um novo jeito de compartilhar conhecimento !!</h3></center>
             <br>
 <!--            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>      -->
 
@@ -136,9 +139,9 @@
                                                 <div class="">
                                                     <div id="registration-form">
                                                         <form role="form" action="../aulas/public/auth/signup" method="post">
-                                                            <div class="form-title">
+<!--                                                            <div class="form-title">
                                                                 e confira nossos cursos...
-                                                            </div>
+                                                            </div>-->
                                                             <div class="form-group">
                                                                 <span class="input-icon icon-right">
                                                                     <input type="text" class="form-control" id="ST_USUARIO_USU" name="ST_USUARIO_USU" placeholder="Usuario" style="height:40px">
@@ -251,12 +254,13 @@
 
         </div>
     </header>
-
+    
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                    <h1>Alguns cursos:</h1>
                     <h2>O conhecimento abre portas,</h2>
                     <p class="lead">oferece mais oportunidades e enriquece as comunidades...</p>
                 </div>
@@ -367,10 +371,10 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-pencil fa-stack-1x text-primary"></i>
+                                <i class="fa fa-question fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Professores</strong>
+                                    <strong>Perguntas</strong>
                                 </h4>
                                 <p>Você não está sozinho. Tire suas dúvidas quando quiser.</p>
 <!--                                <a href="#" class="btn btn-light">Learn More</a>-->
@@ -380,12 +384,12 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-calendar fa-stack-1x text-primary"></i>
+                                <i class="glyphicon glyphicon-stats fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Assinaturas</strong>
                                 </h4>
-                                <p>Receba conhecimento e faça cursos com assinatura.</p>
+                                <p>Gráficos e relatórios para ver seus ganhos.</p>
 <!--                                <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
