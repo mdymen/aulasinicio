@@ -420,6 +420,7 @@ Venha para Bobby Aulas e conheça um novo jeito de compartilhar conhecimento !!<
     <aside class="callout">
         <div class="text-vertical-center">
             <h1>Estude com a gente...</h1>
+            <h2>Publique seu curso em formato PPT, PDF com um clique só... </h2>
         </div>
     </aside>
 
