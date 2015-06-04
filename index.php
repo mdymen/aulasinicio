@@ -109,6 +109,9 @@
                 <a href="#portfolio" onclick = $("#menu-close").click(); >Bobby</a>
             </li>
             <li>
+                <a href="http://www.bobbyaulas.com/wordpress" onclick = $("#menu-close").click(); >Blog</a>
+            </li>            
+            <li>
                 <a href="#contact" onclick = $("#menu-close").click(); >Contato</a>
             </li>
         </ul>
